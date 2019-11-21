@@ -1,15 +1,13 @@
-package com.jk.javaroad;
+package com.jk.mysqlroad;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class JavaroadApplicationTests {
+class MysqlroadApplicationTests {
 
     @Test
     void contextLoads() {
     }
-
-
 
 }

@@ -1,0 +1,132 @@
+判断是否有key所对应的值，有则返回true，没有则返回false
+redisTemplate.hasKey(key)
+
+有则取出key值所对应的值
+redisTemplate.opsForValue().get(key)
+
+删除单个key值
+redisTemplate.delete(key)
+
+批量删除key
+redisTemplate.delete(keys) //其中keys:Collection<K> keys
+
+将当前传入的key值序列化为byte[]类型
+redisTemplate.dump(key)
+
+设置过期时间
+public Boolean expire(String key, long timeout, TimeUnit unit) {
+    return redisTemplate.expire(key, timeout, unit);
+ }
+
+ public Boolean expireAt(String key, Date date) {
+    return redisTemplate.expireAt(key, date);
+  }
+
+查找匹配的key值，返回一个Set集合类型
+public Set<String> getPatternKey(String pattern) {
+    return redisTemplate.keys(pattern);
+}
+
+修改redis中key的名称
+ public void renameKey(String oldKey, String newKey) {
+    redisTemplate.rename(oldKey, newKey);
+}
+
+返回传入key所存储的值的类型
+public DataType getKeyType(String key) {
+    return redisTemplate.type(key);
+}
+
+如果旧值存在时，将旧值改为新值
+public Boolean renameOldKeyIfAbsent(String oldKey, String newKey) {
+    return redisTemplate.renameIfAbsent(oldKey, newKey);
+}
+
+从redis中随机取出一个key
+redisTemplate.randomKey()
+
+返回当前key所对应的剩余过期时间
+ public Long getExpire(String key) {
+    return redisTemplate.getExpire(key);
+}
+
+返回剩余过期时间并且指定时间单位
+public Long getExpire(String key, TimeUnit unit) {
+    return redisTemplate.getExpire(key, unit);
+}
+
+将key持久化保存
+public Boolean persistKey(String key) {
+    return redisTemplate.persist(key);
+}
+
+将当前数据库的key移动到指定redis中数据库当中
+public Boolean moveToDbIndex(String key, int dbIndex) {
+    return redisTemplate.move(key, dbIndex);
+}
+
+设置当前的key以及value值
+redisTemplate.opsForValue().set(key, value)
+
+设置当前的key以及value值并且设置过期时间
+redisTemplate.opsForValue().set(key, value, timeout, unit)
+
+返回key中字符串的子字符
+public String getCharacterRange(String key, long start, long end) {
+    return redisTemplate.opsForValue().get(key, start, end);
+}
+
+将旧的key设置为value，并且返回旧的key
+public String setKeyAsValue(String key, String value) {
+    return redisTemplate.opsForValue().getAndSet(key, value);
+}
+
+批量获取值
+ public List<String> multiGet(Collection<String> keys) {
+    return redisTemplate.opsForValue().multiGet(keys);
+ }
+
+在原有的值基础上新增字符串到末尾
+redisTemplate.opsForValue().append(key, value)
+
+以增量的方式将double值存储在变量中
+ public Double incrByDouble(String key, double increment) {
+    return redisTemplate.opsForValue().increment(key, increment);
+ }
+
+通过increment(K key, long delta)方法以增量方式存储long值（正值则自增，负值则自减）
+public Long incrBy(String key, long increment) {
+    return redisTemplate.opsForValue().increment(key, increment);
+}
+
+如果对应的map集合名称不存在，则添加否则不做修改
+Map valueMap = new HashMap();
+valueMap.put("valueMap","map");
+valueMap.put("valueMap2","map2");
+valueMap.put("valueMap3","map3");
+redisTemplate.opsForValue().multiSetIfAbsent(valueMap);
+
+设置map集合到redis
+Map valueMap = new HashMap();
+valueMap.put("valueMap","map");
+valueMap.put("valueMap2","map2");
+valueMap.put("valueMap3","map3");
+redisTemplate.opsForValue().multiSet(valueMap);
+
+获取字符串的长度
+redisTemplate.opsForValue().size(key)
+
+用 value 参数覆写给定 key 所储存的字符串值，从偏移量 offset 开始
+redisTemplate.opsForValue().set(key, value, offset)
+
+重新设置key对应的值，如果存在返回false，否则返回true
+redisTemplate.opsForValue().setIfAbsent(key, value)
+
+将值 value 关联到 key,并将 key 的过期时间设为 timeout
+redisTemplate.opsForValue().set(key, value, timeout, unit)
+
+将二进制第offset位值变为value
+redisTemplate.opsForValue().setBit(key, offset, value)
+
+对key所储存的字符串值，获取指定偏移量上的位(bi
+redisTemplate.opsForValue().getBit(key, offset)
