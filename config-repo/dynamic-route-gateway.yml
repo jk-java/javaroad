@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id:  urm-service
+          uri: lb://URM-SERVICE
+          predicates:
+            - Path=/**
+          filters:
+            - Auth
