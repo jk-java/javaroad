@@ -8,7 +8,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/hellxz/SpringCloudlearn
+          uri: https://github.com/jk-java/javaroad.git
           search-paths: config-repo
-          username: username  #账号密码写真实的快一些我觉得，不使用也能访问有点慢
-          password: password
+          username: 26273345@qq.com  #账号密码写真实的快一些我觉得，不使用也能访问有点慢
+          password: 201314123jk
