@@ -1,0 +1,8 @@
+CREATE TABLE user
+(
+id INT PRIMARY KEY,
+user_name varchar(20) NOT NULL,
+user_password varchar(60)
+);
+INSERT INTO user VALUES (1, 'Luis');
+INSERT INTO user VALUES (2, '蒋康');
