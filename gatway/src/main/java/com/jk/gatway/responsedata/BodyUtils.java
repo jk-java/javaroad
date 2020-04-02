@@ -1,12 +1,5 @@
 package com.jk.gatway.responsedata;
 
-import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONObject;
-import org.springframework.util.StringUtils;
-
-import java.util.HashMap;
-import java.util.Map;
-
 /**
  * @author jk
  * @Date: 2019/12/6
@@ -16,7 +9,7 @@ public class BodyUtils {
     private final static int OK = 0;
 
 
-    public final static String transforBody(String body) {
+    /*public final static String transforBody(String body) {
         ResponseVo responseVo = new ResponseVo();
         responseVo.setCode(OK);
         if (StringUtils.isEmpty(body)) {
@@ -76,5 +69,6 @@ public class BodyUtils {
             responseVo.setData(jsonObject);
             return JSON.toJSONString(responseVo);
         }
-    }
+    }*/
+
 }

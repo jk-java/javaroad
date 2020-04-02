@@ -1,6 +1,5 @@
 package com.jk.gatway.filter;
 
-import com.jk.common.core.constant.SecurityConstants;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cloud.gateway.filter.GatewayFilterChain;
 import org.springframework.cloud.gateway.filter.GlobalFilter;
@@ -42,13 +41,13 @@ public class AllFilter implements GlobalFilter, Ordered {
         HttpHeaders headers = exchange.getRequest().getHeaders();
         String url = request.getPath().value();
         String method = request.getMethodValue();
-        log.debug("url:{},method:{},headers:{}", url, method, request.getHeaders());
+        log.info("url:{},method:{},headers:{}", url, method, request.getHeaders());
 
         //给所有请求加上请求头
         response.getHeaders().add("Content-Type", "application/json;charset=UTF-8");
         // 1. 清洗请求头中from 参数
         request = exchange.getRequest().mutate()
-                .headers(httpHeaders -> httpHeaders.remove(SecurityConstants.FROM))
+//                .headers(httpHeaders -> httpHeaders.remove(SecurityConstants.FROM))
                 .build();
 
         // 2. 重写StripPrefix

@@ -1,0 +1,18 @@
+server:
+  port: 8092
+
+#spring:
+#  application:
+#    name: oauth
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8081/eureka/
+
+
+logging:
+  level:
+    com.jk.oauth.service : debug
+#    org.springframework.security: DEBUG
+#    org.springframework : debug

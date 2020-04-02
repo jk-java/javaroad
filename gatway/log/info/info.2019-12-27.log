@@ -1,0 +1,36 @@
+INFO  2019-12-27 16:05:02  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+INFO  2019-12-27 16:05:03  main com.jk.gatway.GatwayApplicationTests No active profile set, falling back to default profiles: default
+INFO  2019-12-27 16:05:05  main org.springframework.cloud.context.scope.GenericScope BeanFactory id=5761d65f-3b66-3e0b-8a48-5784c8f8906c
+INFO  2019-12-27 16:05:05  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+INFO  2019-12-27 16:05:05  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+INFO  2019-12-27 16:05:05  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+INFO  2019-12-27 16:05:05  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'deferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+INFO  2019-12-27 16:05:05  main org.springframework.boot.autoconfigure.security.reactive.ReactiveUserDetailsServiceAutoConfiguration 
+
+Using generated security password: ba47e901-c888-4658-a670-0a9ea11457af
+
+INFO  2019-12-27 16:05:07  main org.springframework.cloud.commons.util.InetUtils Cannot determine local hostname
+INFO  2019-12-27 16:05:07  main com.netflix.config.sources.URLConfigurationSource To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+INFO  2019-12-27 16:05:07  main com.netflix.config.sources.URLConfigurationSource To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+INFO  2019-12-27 16:05:08  main org.springframework.cloud.commons.util.InetUtils Cannot determine local hostname
+INFO  2019-12-27 16:05:09  main org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [After]
+INFO  2019-12-27 16:05:09  main org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Before]
+INFO  2019-12-27 16:05:09  main org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Between]
+INFO  2019-12-27 16:05:09  main org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Cookie]
+INFO  2019-12-27 16:05:09  main org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Header]
+INFO  2019-12-27 16:05:09  main org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Host]
+INFO  2019-12-27 16:05:09  main org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Method]
+INFO  2019-12-27 16:05:09  main org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Path]
+INFO  2019-12-27 16:05:09  main org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Query]
+INFO  2019-12-27 16:05:09  main org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+INFO  2019-12-27 16:05:09  main org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [RemoteAddr]
+INFO  2019-12-27 16:05:09  main org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Weight]
+INFO  2019-12-27 16:05:09  main org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [CloudFoundryRouteService]
+INFO  2019-12-27 16:05:11  main org.springframework.cloud.commons.util.InetUtils Cannot determine local hostname
+INFO  2019-12-27 16:05:11  main org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver Exposing 18 endpoint(s) beneath base path '/actuator'
+INFO  2019-12-27 16:05:13  main org.springframework.cloud.commons.util.InetUtils Cannot determine local hostname
+INFO  2019-12-27 16:05:14  main org.springframework.cloud.commons.util.InetUtils Cannot determine local hostname
+INFO  2019-12-27 16:05:14  main com.jk.gatway.GatwayApplicationTests Started GatwayApplicationTests in 13.309 seconds (JVM running for 14.516)
+INFO  2019-12-27 16:05:14  boundedElastic-1 org.springframework.cloud.netflix.eureka.InstanceInfoFactory Setting initial instance status as: STARTING
+INFO  2019-12-27 16:05:14  boundedElastic-1 com.netflix.discovery.DiscoveryClient Initializing Eureka in region us-east-1
+INFO  2019-12-27 16:05:14  SpringContextShutdownHook org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry Unregistering application GATEWAY-SERVICE with eureka with status DOWN

@@ -1,25 +1,16 @@
 package com.jk.urm;
 
-import com.jk.urm.entity.User;
-import com.jk.urm.service.impl.TokenService;
-import javafx.beans.binding.BooleanBinding;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-
-import java.util.Map;
 
 @SpringBootTest
 class UrmApplicationTests {
-
-    @Autowired
-    TokenService tokenService;
 
     @Test
     void contextLoads() {
     }
 
-    @Test
+    /*@Test
     void tokenTest(){
         User user = new User();
         user.setId(1);
@@ -43,5 +34,5 @@ class UrmApplicationTests {
         String msg = (String) map.get("ERR_MSG");
         System.out.println(msg);
     }
-
+*/
 }

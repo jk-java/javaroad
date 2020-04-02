@@ -1,0 +1,33 @@
+server:
+  port: 8802
+
+#注册中心
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8081/eureka/
+
+#---------------------OAuth2---------------------
+security:
+  oauth2:
+    client:
+      access-token-uri: http://localhost:${server.port}/auth/oauth/token
+      user-authorization-uri: http://localhost:${server.port}/auth/oauth/authorize
+      client-id: web
+    resource:
+      user-info-uri:  http://localhost:${server.port}/auth/javayh/member
+      prefer-token-info: false
+
+spring:
+  application:
+    name: gateway-service
+
+  main:
+    allow-bean-definition-overriding: true
+
+#开启路由api配置
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
