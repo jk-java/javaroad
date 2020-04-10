@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/common-core/common-core.iml" filepath="$PROJECT_DIR$/common/common-core/common-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/common-log/common-log.iml" filepath="$PROJECT_DIR$/common/common-log/common-log.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/common-security/common-security.iml" filepath="$PROJECT_DIR$/common/common-security/common-security.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/common-swagger/common-swagger.iml" filepath="$PROJECT_DIR$/common/common-swagger/common-swagger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/config/config.iml" filepath="$PROJECT_DIR$/config/config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/config-client/config-client.iml" filepath="$PROJECT_DIR$/config-client/config-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eurekaserver/eurekaserver.iml" filepath="$PROJECT_DIR$/eurekaserver/eurekaserver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gatway/gatway.iml" filepath="$PROJECT_DIR$/gatway/gatway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/javaroad.iml" filepath="$PROJECT_DIR$/.idea/javaroad.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javase/javase.iml" filepath="$PROJECT_DIR$/javase/javase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mysqlroad/mysqlroad.iml" filepath="$PROJECT_DIR$/mysqlroad/mysqlroad.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oauth/oauth.iml" filepath="$PROJECT_DIR$/oauth/oauth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/redisroad/redisroad.iml" filepath="$PROJECT_DIR$/redisroad/redisroad.iml" />
+      <module fileurl="file://$PROJECT_DIR$/urm/urm.iml" filepath="$PROJECT_DIR$/urm/urm.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="common-log" />
+        <module name="common-swagger" />
+        <module name="mysqlroad" />
+        <module name="config-client" />
+        <module name="config" />
+        <module name="redisroad" />
+        <module name="oauth" />
+        <module name="common-security" />
+        <module name="urm" />
+        <module name="common-core" />
+        <module name="eurekaserver" />
+        <module name="javase" />
+        <module name="gatway" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="common" target="1.8" />
+      <module name="common-core" target="1.8" />
+      <module name="common-log" target="1.8" />
+      <module name="common-security" target="1.8" />
+      <module name="common-swagger" target="1.8" />
+      <module name="config" target="1.8" />
+      <module name="config-client" target="1.8" />
+      <module name="eurekaserver" target="1.8" />
+      <module name="gatway" target="1.8" />
+      <module name="javaroad" target="1.8" />
+      <module name="javase" target="1.8" />
+      <module name="mysqlroad" target="1.8" />
+      <module name="oauth" target="1.8" />
+      <module name="redisroad" target="1.8" />
+      <module name="urm" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="common-core" options="-parameters" />
+      <module name="common-log" options="-parameters" />
+      <module name="common-security" options="-parameters" />
+      <module name="common-swagger" options="-parameters" />
+      <module name="config" options="-parameters" />
+      <module name="config-client" options="-parameters" />
+      <module name="eurekaserver" options="-parameters" />
+      <module name="gatway" options="-parameters" />
+      <module name="javase" options="-parameters" />
+      <module name="mysqlroad" options="-parameters" />
+      <module name="oauth" options="-parameters" />
+      <module name="redisroad" options="-parameters" />
+      <module name="urm" options="-parameters" />
+    </option>
+  </component>
+</project>
